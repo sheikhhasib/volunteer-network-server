@@ -53,7 +53,7 @@ client.connect(err => {
           })
         }
       }).catch(function (error) {
-        
+
       });
     }
   })
@@ -73,6 +73,4 @@ app.get('/', (req, res) => {
   res.send('Hello santo,please! work step by step .kaj kore na kno')
 })
 
-app.listen(port, () => {
-  console.log(`http://localhost:${port}`)
-})
+app.listen(process.env.PORT || port)
